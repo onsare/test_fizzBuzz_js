@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Jasmine Spec Runner</title>
+    <link rel="stylesheet" href="../bower_components/jasmine-core/lib/jasmine-core/jasmine.css">
+  </head>
+  <body>
+    <script src="../bower_components/jasmine-core/lib/jasmine-core/jasmine.js"></script>
+    <script src="../bower_components/jasmine-core/lib/jasmine-core/jasmine-html.js"></script>
+    <script src="../bower_components/jasmine-core/lib/jasmine-core/boot.js"></script>
+
+    <!-- include source files here... -->
+	
+	<script>
+	
+		function fizzBuzz(num){
+		  if(num % 3 === 0 && num % 5 === 0){
+			return "FizzBuzz";
+			
+		  }else if(num % 3 === 0){
+			return "Fizz";
+			
+		  }else if(num % 5 === 0){
+			return "Buzz";
+		  }else{
+			return num;
+		  }
+		}
+	
+	</script>
+
+    <!-- include spec files here... -->
+    <script src="spec/test.js"></script>
+  </body>
+</html>
